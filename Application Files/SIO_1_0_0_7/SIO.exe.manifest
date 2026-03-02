@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SIO.exe" version="1.0.0.7" publicKeyToken="9253c9ff928f52fb" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="SIO.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SIO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SIO.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="Internet" Description="Default rights given to Internet applications" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Opciones del manifiesto UAC
+             Si quiere cambiar el nivel del Control de cuentas de usuario de Windows reemplace el 
+             nodo requestedExecutionLevel por uno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Especificar el elemento requestedExecutionLevel deshabilitará la virtualización de archivos y registros. 
+            Quite este elemento si la aplicación necesita esta virtualización para la compatibilidad
+            con versiones anteriores.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="1188424">
+      <assemblyIdentity name="MySql.Data" version="9.3.0.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OFssmYqZfwymMSJFjC1Yf5NTLQ60hthlaXQbpNciFJs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIO.exe" size="375768">
+      <assemblyIdentity name="SIO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>E9+nMPzGE+bPeo0TJsqc7aCUxW/SaB2i1lX5XMZoJfY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Memory.dll" size="142240">
+      <assemblyIdentity name="System.Memory" version="4.0.1.2" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vz+4RmT0CX8aipvHGlHc+M8akF1AgKTSkNoXMIZuhW8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Numerics.Vectors.dll" size="115856">
+      <assemblyIdentity name="System.Numerics.Vectors" version="4.1.4.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HT74aYKB589zcdFVSv71hys5+Wwm2nciEKM9oEG6EYM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="SIO.exe.config" size="446">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MNWm8MrX8+1MdrwFGRf9yUnyewJ8JUzyBuB4JOoQGRY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SIO.ico" size="13866">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>46XXpbIdRgTthJr/2bhDkvgrxma11NRAfIbFALpTLb8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Una lista de las versiones de Windows en la que se ha probado esta aplicación y
+           con la que se ha diseñado para que trabaje. Quite la marca de comentario de los elementos adecuados y Windows seleccionará 
+           automáticamente el entorno más compatible. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=THINKPADX1\Guillermo" issuerKeyHash="8da192990517fa24ec7dfcd94b7a91e06b9a23ea" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>k1toVpBpfFYkHwMHEp9PDNBdQ9aPfEAYDF20rSfxOt8=</DigestValue></Reference></SignedInfo><SignatureValue>kr48btSGkYpVwIRMtDSv+3pnOaXDLYgcYVZfzbS3tRXkOWY056cAMMKLbSurTXa8HkfM0dzifklU6HkuHZIG6beXCz2JPdOzJrefItI7lesqpcgRJZloxDcYHz3mbf2smrErp8VgGw77KsCL3Joz3NPOmVjpADfLBIyY3HB5Pso=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uMqKGytujHf4BojZb/Qg+DyGgtD/Vipe6XHqxdoYBZhcemJi85Lyv0KW1Fh5Jz23FuJ8H85NOmovlzqjqwMkHbMa2+wM4WVaR0mbcWtOA5y+2cUEO6GEAF0gedxFQ5wyTO1V0AXlAmLgVnjZW5QfuJAmEibD5LWlk7tWJWJIIWE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="df3af127adb45d0c18407c8fd6435dd00c4f9f1207031f24567c699056685b93" Description="" Url=""><as:assemblyIdentity name="SIO.exe" version="1.0.0.7" publicKeyToken="9253c9ff928f52fb" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=THINKPADX1\Guillermo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>IHYroiHRv5psZqV3E/z/ONH4h/LHEiaJpmRzOeTfcQ0=</DigestValue></Reference></SignedInfo><SignatureValue>tf0z5AhgxikIi4AJ7qHwQOcGIyHw8IDsbGQ1I5SrmRRAFMRPR9bLAPl0yQNXPmTPZlPT5BAUzoBIxxXZh1KAwsBmFM8Ubl0R+2pZZ88RL9C8ZCFb1gWL5EvXkguD6WTUirSRKnRPT+tCZuav9MYdn14jGr3/nJMHV5JMzkKsyz8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uMqKGytujHf4BojZb/Qg+DyGgtD/Vipe6XHqxdoYBZhcemJi85Lyv0KW1Fh5Jz23FuJ8H85NOmovlzqjqwMkHbMa2+wM4WVaR0mbcWtOA5y+2cUEO6GEAF0gedxFQ5wyTO1V0AXlAmLgVnjZW5QfuJAmEibD5LWlk7tWJWJIIWE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQLhVlLFTQ/L9NE8APu3sMpDANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAVABIAEkATgBLAFAAQQBEAFgAMQBcAEcAdQBpAGwAbABlAHIAbQBvMB4XDTI2MDIyNDAxMjU1OFoXDTI3MDIyNDA3MjU1OFowMzExMC8GA1UEAx4oAFQASABJAE4ASwBQAEEARABYADEAXABHAHUAaQBsAGwAZQByAG0AbzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuMqKGytujHf4BojZb/Qg+DyGgtD/Vipe6XHqxdoYBZhcemJi85Lyv0KW1Fh5Jz23FuJ8H85NOmovlzqjqwMkHbMa2+wM4WVaR0mbcWtOA5y+2cUEO6GEAF0gedxFQ5wyTO1V0AXlAmLgVnjZW5QfuJAmEibD5LWlk7tWJWJIIWECAwEAATANBgkqhkiG9w0BAQsFAAOBgQALOOIcCOs2AAAkZ9enqJGOOeavhCqXUk2ICtAFS6BeJw+NjLfSoeXQeksREM9cDGQBPI1tohOhWxkHPctEoKvEog4EitGZ3bKD7Kvv8jUnZDj8zgnZDoiSai61QvEns6QzgkahPSQcY0Txe12mfB6y9rdocBD9NCJibZB0O4z7aQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
